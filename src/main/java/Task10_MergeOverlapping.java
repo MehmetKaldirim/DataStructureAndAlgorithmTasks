@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class MergeOverlapping {
+public class Task10_MergeOverlapping {
     public static void main(String[] args) {
         int[][] interval = {{1,2},{3,5},{4,7},{6,8},{9,10}};
 

@@ -1,3 +1,6 @@
+import java.util.Arrays;
+import java.util.stream.IntStream;
+
 public class Task08_FunnyNumber {
 
 
@@ -5,10 +8,11 @@ public class Task08_FunnyNumber {
         int a = 695;
         int b = 2;
         //System.out.println(digPow(a,b));
-        System.out.println(pigDow(a,b));
+        //System.out.println(digPowString(a,b));
+        System.out.println(digPowStream(a,b));
     }
 
-    public static long pigDow (int n , int p){
+    public static long digPow (int n , int p){
        int count =0;
        double result = 0;
        int power =1;
@@ -38,6 +42,14 @@ public class Task08_FunnyNumber {
         }
 
 
+    public static long digPowStream(int n, int p) {
+        int[] digits = String.valueOf(n).chars().map(Character::getNumericValue).toArray();
+        System.out.println(Arrays.toString(digits));
+
+        //String.valueOf(n).chars().map(Character::getNumericValue).forEach(System.out::println);
+        int sum = IntStream.range(0, digits.length).map(i -> (int) Math.pow(digits[i], i + p)).sum();
+        return sum % n == 0 ? sum / n : -1;
+    }
 
 }
 
