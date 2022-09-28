@@ -1,11 +1,8 @@
+package LinkedListQuestion;
 
-
-import org.w3c.dom.Node;
-
-import java.util.LinkedList;
 import java.util.Scanner;
 
-public class Task04_LinkedListManipulation {
+public class Task01_LinkedListStayMeRemoveN {
     public static void main(String[] args) {
 
         MySinglyLinkedList<Integer> nums = new MySinglyLinkedList<>();

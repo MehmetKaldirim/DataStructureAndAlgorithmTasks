@@ -1,5 +1,3 @@
-package CalculateInvoice;
-
 public class Task14_SortString {
     public static void main(String[] args) {
         String str = "4of Fo1r pe6ople g3ood th5e the2";

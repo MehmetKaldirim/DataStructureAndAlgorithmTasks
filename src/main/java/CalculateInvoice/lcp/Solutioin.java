@@ -36,7 +36,7 @@ public class Solutioin {
     }
 
     private static TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
-        if(isLeftChild&&isRight)
+
 
         return lowestCommonAncestor(root,p,q);
     }
